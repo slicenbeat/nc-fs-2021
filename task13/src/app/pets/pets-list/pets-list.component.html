@@ -1,0 +1,4 @@
+<div *ngFor="let pet of pets" class="pet-list">
+    <app-pets-view (onChanged)="onChanged($event)" [pet]="pet" [toggleCat]="toggleCat"></app-pets-view>
+</div>
+<button class="toggle-cat" (click)="toggleCats()">{{buttonName}}</button>

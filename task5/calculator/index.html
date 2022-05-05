@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <div class = "calculator__history_display_none" id="calculator__history">История вычислений:
+
+    </div>
+    <main id="calculator">
+        <div id="calculator__display">
+            <span class="calculator__calculations">
+                <span id="calculator__first-operand"></span>
+                <span id="calculator__operator-span"></span>
+                <span id="calculator__second-operand"></span>
+            </span>
+
+        </div>
+        <div class="calculator__buttons">
+            <button id="calculator__operator" onclick="operator('%')">%</button>
+            <button id="calculator__backspace" onclick="backspace('←')">←</button>
+            <button id="calculator__operator" onclick="operator('÷')">÷</button>
+            <button id="calculator__operator" onclick="operator('√')">√</button>
+            <button id="calculator__old" title="История вычислений" onclick="getHistory()">🤔</button>
+            <button id="calculator__operator" onclick="operator('^')">^</button>
+            <button id="calculator__number" onclick="number('7')">7</button>
+            <button id="calculator__number" onclick="number('8')">8</button>
+            <button id="calculator__number" onclick="number('9')">9</button>
+            <button id="calculator__operator" onclick="operator('×')">×</button>
+            <button id="calculator__number" onclick="number('4')">4</button>
+            <button id="calculator__number" onclick="number('5')">5</button>
+            <button id="calculator__number" onclick="number('6')">6</button>
+            <button id="calculator__operator" onclick="operator('-')">-</button>
+            <button id="calculator__number" onclick="number('1')">1</button>
+            <button id="calculator__number" onclick="number('2')">2</button>
+            <button id="calculator__number" onclick="number('3')">3</button>
+            <button id="calculator__operator" onclick="operator('+')">+</button>
+            <button id="calculator__clear" title="Очистить весь ввод" onclick="clearAll()">🆑</button>
+            <button id="calculator__number" onclick="number('0')">0</button>
+            <button id="calculator__number" onclick="number('.')">.</button>
+            <button class="equals" id="calculator__operator" onclick="equals()">=</button>
+        </div>
+    </main>
+</body>
+
+</html>

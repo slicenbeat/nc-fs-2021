@@ -1,0 +1,33 @@
+<div class="form-container">
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label for="petName">Имя питомца</label>
+            <input type="text" name="petName" formControlName="petName" id="petName">
+            <div class="alert alert-danger" *ngIf="myForm.controls['petName'].invalid ">Имя не валидно</div>
+        </div>
+        <div class="form-group">
+            <label for="petType">Тип питомца</label>
+            <input type="text" name="petType" formControlName="petType" id="petType">
+            <div class="alert alert-danger" *ngIf="myForm.controls['petType'].invalid ">Тип питомца не валиден</div>
+        </div>
+        <div class="form-group">
+            <label for="sex">Пол питомца</label>
+            <input type="text" name="sex" formControlName="sex" id="sex">
+            <div class="alert alert-danger" *ngIf="myForm.controls['sex'].invalid ">Пол не валиден</div>
+        </div>
+        <div class="form-group">
+            <label for="legsCount">Количество ног</label>
+            <input type="number" name="legsCount" formControlName="legsCount" id="legsCount">
+            <div class="alert alert-danger" *ngIf="myForm.controls['legsCount'].invalid ">Количество лап не валидно</div>
+        </div>
+        <div class="form-group">
+            <label for="gachiMasterName">Имя владельца</label>
+            <input type="text" name="gachiMasterName" formControlName="gachiMasterName" id="gachiMasterName">
+            <div class="alert alert-danger" *ngIf="myForm.controls['gachiMasterName'].invalid ">Имя владельца не валидно</div>
+        </div>
+        <button type="submit">Сохранить питомца</button>
+    </form>
+
+
+</div>
+<button (click)="deletePetFunction()">Удалить питомца</button>

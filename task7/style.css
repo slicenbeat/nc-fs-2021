@@ -1,0 +1,85 @@
+body {
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  background-color: rgb(255, 253, 249);
+}
+table {
+  font-size: smaller;
+  table-layout: fixed;
+  margin-right: 10px;
+  border-collapse: collapse;
+  border: 1px solid #ffc1c1;
+  width: 80%;
+}
+thead {
+  font-family: "Balsamiq Sans", cursive;
+  background-color: mistyrose;
+}
+
+main {
+  width: 80%;
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+textarea {
+  resize: none;
+}
+
+col {
+  width: 10%;
+}
+
+.description-col {
+  width: 30%;
+}
+.edit-col {
+  width: 15%;
+}
+
+.add-row-panel {
+  border: 1px solid #ffc1c1;
+  border-radius: 5px;
+  width: 20%;
+  height: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+}
+.add-row-panel__title {
+  text-align: center;
+}
+
+.add-row-panel * {
+  margin-bottom: 10px;
+}
+
+[data-generated] {
+  border-bottom: 1px solid #ffc1c1;
+}
+
+.pageup {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  top: 96%;
+  left: 95%;
+}
+
+.d-none {
+  display: none;
+}

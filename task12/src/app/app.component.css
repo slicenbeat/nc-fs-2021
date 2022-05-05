@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: medium solid blue;
+  background-image: url("../../pets.jpg");
+  background-size: cover;
+  width: 20%;
+  padding: 10px;
+}
+.pet-list {
+  display: flex;
+  flex-direction: column;
+}
+.pet-list__element {
+  margin-bottom: 5px;
+}
+.toggle-cat {
+  align-self: center;
+  width: 100px;
+}
+
+.pet-list__element_color_blue {
+  color: blue;
+}

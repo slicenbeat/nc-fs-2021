@@ -1,0 +1,28 @@
+html {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.animal-app__animals {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 5px solid rgb(223, 156, 156);
+  width: 400px;
+}
+
+.animal-app__animal {
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px groove rgb(236, 165, 165);
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}

@@ -1,0 +1,21 @@
+{
+  "pets": [
+    {
+      "id": 3,
+      "petName": "Леонка",
+      "petType": "Собаки",
+      "sex": "Мужской",
+      "legsCount": 4,
+      "gachiMasterName": "Амина"
+    },
+    {
+      "petId": 4,
+      "petName": "Короста",
+      "petType": "Крысы",
+      "sex": "Мужской",
+      "legsCount": 4,
+      "gachiMasterName": "Рон",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngFor="let pet of pets; let i = index" class="pet-list">
+    <div *ngIf="(toggleCat&&pet.petType === 'Коты') || pet.petType != 'Коты'" class="pet-list__element" [ngClass]="'pet-list__element_color_blue': pet.isToggle}"
+      (click)="toggleInfo(pet)" [attr.petNumber]="i">
+      <span>{{pet.petName}} {{pet.petType}}</span>
+      <span *ngIf="pet.isToggle">
+        {{pet.sex}} {{pet.legsCount}} {{pet.gachiMasterName}}
+      </span>
+    </div>
+  </div>
+  <button class="toggle-cat" (click)="toggleCats()">{{buttonName}}</button>
+</div>

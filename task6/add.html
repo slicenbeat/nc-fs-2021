@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="slicenbeat">
+    <meta name="description" content="Home page of Elearn site">
+    <meta name="keywords" content="Elearn, study, learning, e-courses, online courses">
+    <script src="./add.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/add.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div id="logo">
+            <div class="logo">
+                Elearn
+            </div>
+            <div class="dot">.</div>
+        </div>
+        <nav class="menu">
+            <div class="menu__element">
+                <img class="menu__element-img" src="./images/588a668cd06f6719692a2d1b (1).png" alt="">
+                <div class="menu__element-text">Home</div>
+            </div>
+            <div class="menu__element">
+
+                <img class="menu__element-img" src="./images/mycourse-hover.png" alt="">
+
+                <a href="./mycourses.html" class="menu__element-text menu__element-text_text-decoration_none">My
+                    Courses</a>
+            </div>
+            <div class="menu__element">
+                <img class="menu__element-img" src="./images/Group.png" alt="">
+                <div class="menu__element-text">
+                    Favorite
+                </div>
+            </div>
+            <div class="menu__element">
+                <img class="menu__element-img" src="./images/notepad 1.png" alt="">
+                <div class="menu__element-text">
+                    Test
+                </div>
+            </div>
+            <div class="menu__element">
+                <img class="menu__element-img" src="./images/award 1.png" alt="">
+                <div class="menu__element-text">
+                    Achievements
+                </div>
+            </div>
+            <div class="menu__element">
+                <img class="menu__element-img" src="./images/award-49 1.png" alt="">
+                <div class="menu__element-text">Certificate</div>
+            </div>
+            <div class="menu__element">
+                <img class="menu__element-img" src="./images/Setting.png" alt="">
+                <div class="menu__element-text">Settings</div>
+            </div>
+        </nav>
+        <div class="personal-info">
+            <div class="personal-info__block">
+                <img src="./images/avatar1.png" class="personal-info__img" alt="">
+                <div class="personal-info__user">
+                    <span class="personal-info__name">Toda D. <br></span>
+                    <span class="personal-info__status">Premium account</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h1 class="greeting-message">
+            <span class="greeting-hi">Your learning path <br></span>
+        </h1>
+
+        <div class="learning-path">
+            <div class="home-courses">
+                <article class="home-course">
+                    <h3 class="home-course__title">Sketch from A to Z</h3>
+                    <span class="home-course__descr">12 hours of <br> video tutorials </span>
+                    <span class="home-course__students-count">423 students</span>
+                    <div class="home-course__img-block">
+                        <img src="./images/Group 48.png" alt="" class="home-course__students-img">
+                        <img src="./images/shape-star 2.png" alt="" class="home-course__star-img">
+                    </div>
+                </article>
+
+                <article class="home-course">
+                    <h3 class="home-course__title ">Intro to React</h3>
+                    <span class="home-course__descr">8 hours of <br> video tutorials</span>
+                    <span class="home-course__students-count">648 students</span>
+                    <div class="home-course__img-block">
+                        <img src="./images/Group 48 (1).png" alt="" class="home-course__students-img">
+                        <img src="./images/shape-star 2.png" alt="" class="home-course__star-img">
+                    </div>
+                </article>
+
+                <article class="home-course">
+                    <h3 class="home-course__title ">Become a manager</h3>
+                    <span class="home-course__descr">24 hours of <br> video tutorials</span>
+                    <span class="home-course__students-count">562 students</span>
+                    <div class="home-course__img-block">
+                        <img src="./images/Group 48 (2).png" alt="" class="home-course__students-img">
+                        <img src="./images/shape-star 2.png" alt="" class="home-course__star-img">
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="ad">
+            <h2 class="ad__header">
+                Форма обратной связи<br>
+            </h2>
+
+            <form class="ad__inputs" id="form">
+                <label for="firstName">Имя</label><input class="ad__input ad__required-input" type="text"
+                    id="firstName">
+                <label for="lastName">Фамилия</label><input class="ad__input ad__required-input" type="text"
+                    id="lastName">
+                <label for="email">E-mail</label><input class="ad__input ad__required-input" type="email" id="email"
+                    placeholder="example@mail.com">
+                <label for="phone">Телефон</label><input class="ad__input" type="text" id="phone"
+                    placeholder="+X(XXX)XX-XX-XXX">
+                <label for="message">Сообщение</label><textarea class="ad__input ad__required-input ad__textarea"
+                    id="message" cols="30" rows="2"></textarea>
+                <input class="ad__send-button" type="button" value="Отправить" id="sendButton">
+            </form>
+        </div>
+    </main>
+
+    <aside class="progressbar">
+        <div class="search-notification">
+            <img src="./images/Search.png" alt="Здесь должен быть значок поиска"
+                class="search-notification__search-img">
+            <input type="search" id="search-notification__search-caption" placeholder="Search">
+
+
+
+            <div class="search-notification__notification-icon">
+                <div class="search-notification__notification-icon-bell-circle">
+                    <img src="./images/bell.png" alt="" class="search-notification__notification-icon-bell-img">
+                </div>
+                <div class="search-notification__notification-icon-circle">
+                    2
+                </div>
+            </div>
+        </div>
+        <section class="course-in-progress">
+            <h2 class="course-in-progress__title">
+                Course in Progress
+            </h2>
+            <div class="course-in-progress__courses">
+                <div class="course-in-progress__course">
+                    <div class="course-in-progress__course-logo">
+                        <div class="course-in-progress__course-logo-circle">
+                            <img src="./images/ci.png" alt="" class="course-in-progress__course-img">
+                        </div>
+                    </div>
+                    <article class="course-in-progress__course-text">
+                        <h3 class="course-in-progress__course-title">
+                            Build Your First Application
+                        </h3>
+                        <span class="course-in-progress__course-description">
+                            Codeigniter
+                        </span>
+                    </article>
+                    <div class="course-in-progress__course-arrow">
+                    </div>
+                </div>
+
+
+                <div class="course-in-progress__course">
+                    <div class="course-in-progress__course-logo course-in-progress__course-logo_background_FFCE73">
+                        <div class="course-in-progress__course-logo-circle">
+                            <img src="./images/skech.png" alt="" class="course-in-progress__course-img">
+                        </div>
+                    </div>
+                    <article class="course-in-progress__course-text">
+                        <h3 class="course-in-progress__course-title">
+                            Build something beautiful
+                        </h3>
+                        <span class="course-in-progress__course-description">
+                            Sketch
+                        </span>
+                    </article>
+                    <div class="course-in-progress__course-arrow">
+                    </div>
+                </div>
+
+                <div class="course-in-progress__course">
+                    <div class="course-in-progress__course-logo course-in-progress__course-logo_background_A0D7E7">
+                        <div class="course-in-progress__course-logo-circle">
+                            <img src="./images/firebase.png" alt="" class="course-in-progress__course-img">
+                        </div>
+                    </div>
+                    <article class="course-in-progress__course-text">
+                        <h3 class="course-in-progress__course-title">
+                            Firebase on Android: Cloud Fire
+                        </h3>
+                        <span class="course-in-progress__course-description">
+                            Firebase
+                        </span>
+                    </article>
+                    <div class="course-in-progress__course-arrow">
+                    </div>
+                </div>
+
+                <div class="course-in-progress__course">
+                    <div class="course-in-progress__course-logo course-in-progress__course-logo_background_B2E2D7">
+                        <div class="course-in-progress__course-logo-circle">
+                            <img src="./images/Path 1.png" alt="" class="course-in-progress__course-img">
+                        </div>
+                    </div>
+                    <article class="course-in-progress__course-text">
+                        <h3 class="course-in-progress__course-title">
+                            Creating Custom Animations
+                        </h3>
+                        <span class="course-in-progress__course-description">
+                            Principle
+                        </span>
+                    </article>
+                    <div class="course-in-progress__course-arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="learning-point">
+            <h2 class="learning-point__title">
+                Your learning point
+            </h2>
+            <img src="./images/Untitled.png" alt="" class="learning-point__img">
+        </section>
+    </aside>
+</body>
+
+</html>

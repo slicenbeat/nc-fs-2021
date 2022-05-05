@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  task22-container:
+    build: .
+    image: nginx
+    container_name: task22-container
+    ports:
+      - "8080:8080"
+    environment:
+      - SOME_ENV=qwerty
+  api-json:
+    image: clue/json-server
+    volumes:
+        - ./data:/data/
+    ports:
+        - 3000:80

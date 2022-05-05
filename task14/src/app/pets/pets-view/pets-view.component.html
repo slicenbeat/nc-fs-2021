@@ -1,0 +1,7 @@
+<div *ngIf="(toggleCat&&pet.petType === 'Коты') || pet.petType != 'Коты'" class="pet-list__element"
+    (click)="toggleInfo()" (click)="notification(true)" [ngClass]="{'pet-list__element_color_blue': isToggle}">
+    <span><a [routerLink]="['/pet', pet.id]">{{pet.petName}} {{pet.petType}}</a></span>
+    <span *ngIf="isToggle">
+        {{pet.sex}} {{pet.legsCount}} {{pet.gachiMasterName}}
+    </span>
+</div>

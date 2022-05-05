@@ -1,0 +1,34 @@
+<div *ngFor="let pet of pets" class="pet-list">
+    <app-pets-view (onChanged)="onChanged($event)" [pet]="pet" [toggleCat]="toggleCat"></app-pets-view>
+</div>
+<button class="toggle-cat" (click)="toggleCats()">{{buttonName}}</button>
+<button class="toggle-cat" (click)="changeAddCat()">Добавление питомца</button>
+<div [ngClass]="{'form-container': addCatFlag}" >
+    <form (ngSubmit)="addCat(myForm)" #myForm = "ngForm" >
+        <div class="form-group">
+            <label for="petId">Номер питомца (id)</label>
+            <input type="number" minlength = "2"  name="petId" required [(ngModel)]="pet.id" id="petId">
+        </div>
+        <div class="form-group">
+            <label for="petName">Имя питомца</label>
+            <input type="text" minlength = "2"  name="petName" required [(ngModel)]="pet.petName" id="petName">
+        </div>
+        <div class="form-group">
+            <label for="petType">Тип питомца</label>
+            <input type="text" minlength = "4" name="petType" required [(ngModel)]="pet.petType" id="petType">
+        </div>
+        <div class="form-group">
+            <label for="sex">Пол питомца</label>
+            <input type="text" minlength = "7" name="sex"  required [(ngModel)]="pet.sex" id="sex">
+        </div>
+        <div class="form-group">
+            <label for="legsCount">Количество ног</label>
+            <input type="number" name="legsCount" min="0" max="4" required [(ngModel)]="pet.legsCount" id="legsCount">
+        </div>
+        <div class="form-group">
+            <label for="gachiMasterName">Имя владельца</label>
+            <input type="text" minlength = "2" name="gachiMasterName" required [(ngModel)]="pet.gachiMasterName" id="gachiMasterName">
+        </div>
+        <button type="submit">Добавить питомца</button>
+    </form>
+</div>

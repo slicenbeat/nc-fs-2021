@@ -1,0 +1,95 @@
+body {
+  font-family: "Arimo", sans-serif;
+  height: 100%;
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/018/861/861/large/finn-mccarthy-1000-samples-with-sun.jpg?1561007514");
+}
+
+#calculator {
+  display: grid;
+  grid-template-rows: 160px 320px;
+  grid-template-columns: 270px;
+}
+
+#calculator__display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: auto;
+  padding: 5px;
+  background-color: bisque;
+  font-size: 28px;
+  color: white;
+  background-color: rgb(19, 21, 32);
+}
+
+.calculator__calculations {
+  overflow: auto;
+}
+
+.calculator__buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20% 20% 20% 20% 20% 20%;
+  box-shadow: 4px 4px 8px 0px rgba(29, 142, 228, 0.2);
+}
+
+#calculator__history {
+  position: absolute;
+  background-color: rgb(19, 21, 32);
+  flex-direction: column;
+  white-space: pre-line;
+  overflow: auto;
+  color: cyan;
+  width: 270px;
+  font-size: 10px;
+  height: 160px;
+}
+
+button {
+  background-color: rgb(19, 21, 32);
+  color: white;
+  font-size: medium;
+  border: none;
+}
+
+button:hover {
+  transition: all;
+  background: rgb(255, 0, 242);
+  transition-duration: 0.2s;
+}
+
+#calculator__operator {
+  color: cyan;
+}
+
+#calculator__old {
+  grid-column: span 2;
+}
+
+#calculator__backspace {
+  grid-column: span 2;
+}
+
+.calculator__calculations::-webkit-scrollbar,
+#calculator__history::-webkit-scrollbar {
+  width: 10px;
+}
+
+.calculator__calculations::-webkit-scrollbar-thumb,
+#calculator__history::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 242);
+}
+
+.calculator__calculations::-webkit-scrollbar-thumb:hover,
+#calculator__history::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(199, 0, 189);
+}
+
+
+.calculator__history_display_flex{
+  display:flex;
+}
+
+.calculator__history_display_none{
+  display:none;
+}

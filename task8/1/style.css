@@ -1,0 +1,30 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-size: cover;
+}
+
+article {
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: rgb(255, 255, 255);
+  width: 30%;
+  height: 20%;
+  padding: 1%;
+}
+
+article > * {
+  margin-bottom: 20px;
+}
+input {
+  width: 50%;
+  align-self: center;
+}
+input[type="button"] {
+  border: none;
+  background-color: white;
+}
